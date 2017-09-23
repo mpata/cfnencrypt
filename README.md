@@ -5,6 +5,7 @@ AWS CloudFormation Custom Resource to encrypt strings using AWS KMS.
 ## Introduction
 At the moment of this writing, there's no way to create a AWS::SSM::Parameter with a "SecureString" type ([doc](http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-parameter.html#aws-resource-ssm-parameter-properties)). This is just a workaround that limitation, use it at your own risk.
 
+Wishful thinking, having a CloudFormation intrinsic function for this (Fn::EncryptString).
 ## Custom Resource
 ### Properties
 * KeyId: KMS Key Id
